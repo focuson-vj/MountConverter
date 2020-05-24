@@ -1,5 +1,6 @@
 var firebaseInit = require('./firebase');
 var osc = require('node-osc');
+var network = require('./config.json');
 
 var getData = function() {
   const db = firebaseInit.db;
@@ -7,12 +8,15 @@ var getData = function() {
 
   let observer = doc.onSnapshot(docSnapshot => {
     console.dir(JSON.stringify(docSnapshot.data()));
+
     let data = docSnapshot.data();
     console.log(`Received doc snapshot: ${data.count}`);
-    const client = new osc.Client('127.0.0.1', 3333);
-    client.send('/oscAddress', data.count, () => {
+
+    const client = new osc.Client(network.IP_ADDRESS, network.PORT);
+    client.send('/generate_object', data.count, () => {
       client.close();
     });
+
   }, err => {
     console.log(`Encountered error: ${err}`);
   });
