@@ -9,9 +9,12 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "helmet": "3.8.2",
+    "firebase": "^7.14.5",
+    "firebase-admin": "^8.12.1",
+    "helmet": "^3.8.2",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "node-osc": "^5.1.0",
     "pug": "2.0.0-beta11"
   }
 }

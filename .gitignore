@@ -21,4 +21,4 @@ yarn-error.log*
 *.sw?
 
 # env param file
-src/firebase/env.json
+app/firebase/env.json
