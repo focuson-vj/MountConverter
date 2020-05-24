@@ -5,6 +5,7 @@ var network = require('./config.json');
 var getData = function() {
   const db = firebaseInit.db;
   let doc = db.collection('action').doc('new-doc');
+  // 複数のイベントを検知するなら、collection下のdocを増やす方針
 
   let observer = doc.onSnapshot(docSnapshot => {
     console.dir(JSON.stringify(docSnapshot.data()));
@@ -16,7 +17,6 @@ var getData = function() {
     client.send('/generate_object', data.count, () => {
       client.close();
     });
-
   }, err => {
     console.log(`Encountered error: ${err}`);
   });
