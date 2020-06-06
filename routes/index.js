@@ -5,7 +5,7 @@ var firebasetools = require('../app/index');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   firebasetools.getData();
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Focus On!' });
 });
 
 module.exports = router;
