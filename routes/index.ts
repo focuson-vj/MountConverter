@@ -10,4 +10,4 @@ router.get("/", (req: Request, res: Response, _next: NextFunction) => {
   res.render("index", { title: "Focus On!" });
 });
 
-export default { router };
+export default router;
