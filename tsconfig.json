@@ -65,5 +65,5 @@
     "resolveJsonModule": true
   },
   "include": ["**/*"],
-  "exclude": []
+  "exclude": ["node_modules"]
 }

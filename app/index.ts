@@ -1,5 +1,6 @@
 import { db } from "./firebase/index";
-import osc from "node-osc";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const osc = require("node-osc");
 import network from "./config.json";
 
 export const getData = (): void => {
