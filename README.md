@@ -2,15 +2,18 @@
 Firestoreのデータをリアルタイムに取得し、OSCを利用してデータを吐き出すインタフェース
 
 ## Description
-Firestoreのデータをリアルタイムに取得し、OSCを利用してデータを吐き出すインタフェース
+- Firestoreからリアルタイムにデータを受信し、受け取ったデータを変換しOSCに乗せて送信するプロキシサーバです。
+- Firebaseサービスアカウント情報とOSCの受信先さえあればどなたでも利用できます。
 
 ## Requirements
 Node.js
-ほか
+TypeScript
+tsc
+ts-node
 
 ## How to use
 1. /app/config.json へOSCメッセージの送信先を設定する
-2. `$ PORT=8000 npm start` を実行してサーバ立ち上げ
+2. `$ ts-node app.ts` を実行してサーバ立ち上げ
 
 ## Contribution
 1. Fork it
