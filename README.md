@@ -6,10 +6,10 @@ Firestoreのデータをリアルタイムに取得し、OSCを利用してデ�
 - Firebaseサービスアカウント情報とOSCの受信先さえあればどなたでも利用できます。
 
 ## Requirements
-Node.js
-TypeScript
-tsc
-ts-node
+- Node.js
+- TypeScript
+- tsc
+- ts-node
 
 ## How to use
 1. /app/config.json へOSCメッセージの送信先を設定する
