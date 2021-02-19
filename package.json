@@ -3,9 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.9",
+    "@types/http-errors": "^1.8.0",
+    "@types/morgan": "^1.9.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -16,5 +22,16 @@
     "morgan": "~1.9.1",
     "node-osc": "^5.1.0",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "@types/helmet": "^4.0.0",
+    "@types/node": "^12.19.8",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2"
   }
 }
