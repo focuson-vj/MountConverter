@@ -4,7 +4,6 @@ const osc = require("node-osc");
 import network from "./config.json";
 
 export const getData = (): void => {
-  //let doc = db.collection('action').doc('new-doc');
   const col = db.collection("action");
   // 複数のイベントを検知するなら、collection下のdocを増やす方針
 
