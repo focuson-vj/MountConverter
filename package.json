@@ -14,7 +14,7 @@
     "@types/morgan": "^1.9.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "firebase": "^7.14.5",
     "firebase-admin": "^8.12.1",
     "helmet": "^3.8.2",
